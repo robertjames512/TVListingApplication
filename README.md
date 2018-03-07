@@ -11,7 +11,7 @@ After you've established connection to MySQL. You will need to create the table 
 
 Run the following query:
 
-CREATE TABLE `Tvlistings` (   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,   `title` varchar(20) NOT NULL DEFAULT '',   `description` varchar(20) DEFAULT NULL,   `duration` varchar(20) DEFAULT NULL,   `originalAirDate` varchar(20) DEFAULT NULL,   `rating` varchar(20) DEFAULT NULL,   `keywords` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+CREATE TABLE `Tvlistings` (   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,   `title` varchar(20) NOT NULL DEFAULT '',   `description` varchar(50) DEFAULT NULL,   `duration` varchar(20) DEFAULT NULL,   `originalAirDate` varchar(20) DEFAULT NULL,   `rating` varchar(20) DEFAULT NULL,   `keywords` varchar(20) DEFAULT NULL,   PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
 
 Refresh your DB schema and you should see a new table named 'tvlistings'.
 
